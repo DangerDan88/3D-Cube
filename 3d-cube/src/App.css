@@ -13,7 +13,7 @@
 }
 
 .pers250 {
-  perspective: 650px;
+  perspective: 750px;
 }
 .cube {
   width: 100%;
@@ -38,8 +38,7 @@
 
 /* Define each face based on direction */
 .front {
-  background-image: url("../public/zoro.jpeg");
-  background-size: contain;
+  background: rgba(0, 255, 0, 1);
   transform: translateZ(50px);
 }
 
@@ -72,6 +71,7 @@
 html {
   background-color: black;
 }
+
 
 
 
