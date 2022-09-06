@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
@@ -6,7 +5,7 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="cube pers250">
-          <div className="face front">1</div>
+          <div className="face front"></div>
           <div className="face back">2</div>
           <div className="face right">3 </div>
           <div className="face left">4</div>
@@ -14,10 +13,9 @@ function App() {
           <div className="face bottom">6</div>
         </div>
       </div>
-      <p>3D-Cube</p>
     </div>
   );
 }
-/// need to study X and Y axis to get this cube to look 3D
-// why wont this fucking commit?
+//The perspective is what gives us the 3D impression. The farther from the viewer the elements are, the smaller they are.
+// need to figure out how to rotate it
 export default App;
