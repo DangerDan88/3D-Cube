@@ -26,8 +26,8 @@
 .face {
   display: block;
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border: none;
   line-height: 100px;
   font-family: sans-serif;
@@ -39,33 +39,33 @@
 /* Define each face based on direction */
 .front {
   background: rgba(0, 255, 0, 1);
-  transform: translateZ(50px);
+  transform: translateZ(100px);
 }
 
 .back {
   background: rgba(0, 255, 0, 1);
   color: black;
-  transform: rotateY(180deg) translateZ(50px);
+  transform: rotateY(180deg) translateZ(100px);
 }
 
 .right {
   background: rgba(196, 0, 0, 0.7);
-  transform: rotateY(90deg) translateZ(50px);
+  transform: rotateY(90deg) translateZ(100px);
 }
 
 .left {
   background: rgba(0, 0, 196, 0.7);
-  transform: rotateY(-90deg) translateZ(50px);
+  transform: rotateY(-90deg) translateZ(100px);
 }
 
 .top {
   background: rgba(196, 196, 0, 0.7);
-  transform: rotateX(90deg) translateZ(50px);
+  transform: rotateX(90deg) translateZ(100px);
 }
 
 .bottom {
   background: rgba(196, 0, 196, 0.7);
-  transform: rotateX(-90deg) translateZ(50px);
+  transform: rotateX(-90deg) translateZ(100px);
 }
 
 html {
