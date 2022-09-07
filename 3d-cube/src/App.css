@@ -21,8 +21,16 @@
   backface-visibility: visible;
   perspective-origin: 150% 150%;
   transform-style: preserve-3d;
+  transition: transform .7s ease-in-out;
 }
 
+
+.cube {
+  transition: transform .7s ease-in-out;
+}
+:hover {
+  transform: rotate(360deg);
+}
 .face {
   display: block;
   position: absolute;
@@ -38,7 +46,8 @@
 
 /* Define each face based on direction */
 .front {
-  background: rgba(0, 255, 0, 1);
+background-image: url("./zoro.jpeg");
+background-size: contain;
   transform: translateZ(100px);
 }
 
@@ -71,6 +80,17 @@
 html {
   background-color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

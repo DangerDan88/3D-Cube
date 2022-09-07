@@ -1,14 +1,11 @@
 import "./App.css";
-import killua from "./killua.jpeg";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
         <div className="cube pers250">
-          <div className="face front">
-            <img src={killua} alt="killua" height={100} width={100}></img>
-          </div>
+          <div className="face front"></div>
           <div className="face back">2</div>
           <div className="face right">3 </div>
           <div className="face left">4</div>
