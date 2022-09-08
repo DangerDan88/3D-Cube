@@ -4,13 +4,13 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="cube pers250">
-          <div className="face front"></div>
-          <div className="face back">2</div>
-          <div className="face right">3 </div>
-          <div className="face left">4</div>
-          <div className="face top">5</div>
-          <div className="face bottom">6</div>
+        <div className="cube">
+          <div className="cube__face cube__face--front">1</div>
+          <div className="cube__face cube__face--back"></div>
+          <div className="cube__face cube__face--right">3 </div>
+          <div className="cube__face cube__face--left">4</div>
+          <div className="cube__face cube__face--top">5</div>
+          <div className="cube__face cube__face--bottom">6</div>
         </div>
       </div>
     </div>
