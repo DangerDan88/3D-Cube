@@ -18,12 +18,11 @@
   position: relative;
   transform-style: preserve-3d;
   transform: translateZ(-100px);
-}
-
-
-.cube:hover {
   animation: spinning infinite 10s;
 }
+
+
+
 
 @keyframes spinning {
   from  { transform: rotateY(0deg) rotateX(0deg) translateZ(-100px);   }
