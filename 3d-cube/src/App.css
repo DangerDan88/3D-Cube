@@ -1,40 +1,44 @@
 .App {
-  text-align: center;
-  display: flex;
-  justify-content: center;
+   width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   background-color: black;
   color: white;
 }
 .container {
-  width: 200px;
-  height: 200px;
-  margin: 80px;
-  perspective: 400px;
+  width: 15em;
+    height: 15em;
+    text-align: center;
+    perspective: 45em;
 }
 
 .cube {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transform: translateZ(-100px);
-  animation: spinning infinite 10s;
+  animation: rotate 20s linear infinite;
 }
 
 
 
 
-@keyframes spinning {
-  from  { transform: rotateY(0deg) rotateX(0deg) translateZ(-100px);   }
-  to    { transform: rotateY(-360deg) rotateX(360deg); }
+@keyframes rotate {
+  100% {
+    transform: rotateY(360deg) rotateX(720deg) rotateZ(1080deg);
+  }
 }
+
 
 .cube.front { transform: translateZ(-100px) rotateY(   0deg); }
 .cube.right  { transform: translateZ(-100px) rotateY( -90deg); }
 .cube.back   { transform: translateZ(-100px) rotateY(-180deg); }
 .cube.left   { transform: translateZ(-100px) rotateY(  90deg); }
 .cube.top    { transform: translateZ(-100px) rotateX( -90deg); }
-.cube.bottom { transform: translateZ(-100px) rotateX(  90deg); }
+.cube.bottom { transform: translateZ(-100px) rotateX( 90deg); }
 
 .cube__face {
   position: absolute;
@@ -66,6 +70,8 @@
 html {
   background-color: black;
 }
+
+
 
 
 
