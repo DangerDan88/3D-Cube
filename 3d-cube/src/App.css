@@ -50,14 +50,16 @@
   font-weight: bold;
   color: white;
   text-align: center;
+  background-position: center;
+  background-size: cover;
 }
 
-.cube__face--front  { background-image: url("./cote.jpeg"); background-size: contain; }
-.cube__face--right  { background: hsla( 60, 100%, 50%, 0.7); }
-.cube__face--back   { background-image: url("./zoro.jpeg"); background-size: contain; }
-.cube__face--left   { background-image: url("./kill.jpeg"); background-size: contain; }
-.cube__face--top    { background: hsla(240, 100%, 50%, 0.7); }
-.cube__face--bottom { background-image: url("./ashura.jpeg"); background-size: contain; }
+.cube__face--front  { background-image: url("./cote.jpeg"); }
+.cube__face--right  { background-image: url("./luffy.jpeg"); }
+.cube__face--back   { background-image: url("./zoro.jpeg"); }
+.cube__face--left   { background-image: url("./kill.jpeg"); }
+.cube__face--top    { background-image: url("./mha.jpeg"); }
+.cube__face--bottom { background-image: url("./ashura.jpeg"); }
 
 .cube__face--front  { transform: rotateY(  0deg) translateZ(100px); }
 .cube__face--right  { transform: rotateY( 90deg) translateZ(100px); }
@@ -70,9 +72,6 @@
 html {
   background-color: black;
 }
-
-
-
 
 
 
