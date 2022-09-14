@@ -18,5 +18,5 @@ function App() {
   );
 }
 // need to figure out how to get a few sides to show a little more
-// see if I can make top of cube visible on start
+// see if I can make top of cube visible on start or some sides
 export default App;

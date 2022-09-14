@@ -57,7 +57,7 @@
 .cube.bottom { transform: translateZ(-100px) rotateX( 90deg); }
 
 
-.cube__face--front  { background-image: url("./cote.jpeg"); }
+.cube__face--front  { background-image: url("./clover.jpeg"); }
 .cube__face--right  { background-image: url("./pirates.jpg"); }
 .cube__face--back   { background-image: url("./jujit.jpg"); }
 .cube__face--left   { background-image: url("./blue.jpeg"); }
@@ -75,7 +75,6 @@
 html {
   background-color: black;
 }
-
 
 
 
