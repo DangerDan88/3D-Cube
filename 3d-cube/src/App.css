@@ -10,9 +10,9 @@
 }
 .container {
   width: 15em;
-    height: 15em;
-    text-align: center;
-    perspective: 45em;
+  height: 15em;
+  text-align: center;
+  perspective: 45em;
 }
 
 .cube {
@@ -23,7 +23,23 @@
   animation: rotate 20s linear infinite;
 }
 
-
+.cube__face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: solid 2px black;
+  line-height: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  filter: none; 
+-webkit-filter: blur(0px); 
+-moz-filter: blur(0px); 
+-ms-filter: blur(0px);
+}
 
 
 @keyframes rotate {
@@ -40,26 +56,13 @@
 .cube.top    { transform: translateZ(-100px) rotateX( -90deg); }
 .cube.bottom { transform: translateZ(-100px) rotateX( 90deg); }
 
-.cube__face {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border: solid 2px white;
-  line-height: 200px;
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  background-position: center;
-  background-size: cover;
-}
 
 .cube__face--front  { background-image: url("./cote.jpeg"); }
-.cube__face--right  { background-image: url("./luffy.jpeg"); }
-.cube__face--back   { background-image: url("./zoro.jpeg"); }
-.cube__face--left   { background-image: url("./kill.jpeg"); }
+.cube__face--right  { background-image: url("./pirates.jpg"); }
+.cube__face--back   { background-image: url("./jujit.jpg"); }
+.cube__face--left   { background-image: url("./blue.jpeg"); }
 .cube__face--top    { background-image: url("./mha.jpeg"); }
-.cube__face--bottom { background-image: url("./ashura.jpeg"); }
+.cube__face--bottom { background-image: url("./mob100.jpeg"); }
 
 .cube__face--front  { transform: rotateY(  0deg) translateZ(100px); }
 .cube__face--right  { transform: rotateY( 90deg) translateZ(100px); }
@@ -72,10 +75,6 @@
 html {
   background-color: black;
 }
-
-
-
-
 
 
 
